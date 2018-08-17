@@ -4,7 +4,7 @@
   "description": "A template for creating off-chain Zap oracles.",
   "main": "src/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/tsc",
+    "build": "./node_modules/.bin/tsc -t es2018",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -22,6 +22,8 @@
     "@zapjs/dispatch": "^2.0.12",
     "@zapjs/provider": "^2.0.12",
     "@zapjs/zaptoken": "^2.0.9",
+    "ethereumjs-abi": "^0.6.5",
+    "newsapi": "^2.3.0",
     "path": "^0.12.7",
     "request": "^2.88.0",
     "truffle-hdwallet-provider": "git+https://github.com/zapproject/truffle-hdwallet-provider.git",
